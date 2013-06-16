@@ -1,0 +1,297 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/" . "bin/")
+ ("/home/andrew/Work/Glaws/Servers/" . "apache-tomcat-6.0.32-cms/")
+ ("/home/andrew/Work/Glaws/" . "Servers/")
+ ("/home/andrew/Work/" . "Glaws/")
+ ("/etc/mysql/" . "conf.d/")
+ ("/home/andrew/Projects/oppenlanderco-pelican/content/" . "pages/")
+ ("/home/andrew/Projects/oppenlanderco-pelican/" . "content/")
+ ("/home/andrew/Projects/oppenlanderco-nanoc/" . "content/")
+ ("/home/andrew/Projects/oppenlanderco-jekyll/" . "_layouts/")
+ ("/home/" . "andrew/")
+ ("/home/andrew/Projects/oppenlanderco/src/documents/" . "pages/")
+ ("/home/andrew/Projects/oppenlanderco/src/" . "layouts/")
+ ("/home/andrew/Projects/oppenlanderco/" . "site/")
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/" . "bamboo-cutter/")
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/" . "articles/")
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/" . "templates/")
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/" . "site/")
+ ("/home/andrew/Projects/wintersmith/" . "oppenlanderco/")
+ ("/home/andrew/Projects/kivy/" . "pong/")
+ ("/home/andrew/ignifuga/src/" . "components/")
+ ("/home/andrew/ignifuga/tmp/intel_linux64/ignifuga/" . "cython_src/")
+ ("/home/andrew/ignifuga/tmp/intel_linux64/" . "python/")
+ ("/home/andrew/ignifuga/tmp/" . "intel_linux64/")
+ ("/home/andrew/ignifuga/tools/modules/" . "python/")
+ ("/home/andrew/ignifuga/tools/" . "modules/")
+ ("/home/andrew/ignifuga/dist/" . "intel_linux64/")
+ ("/home/andrew/ignifuga/" . "tools/")
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/documents/" . "scripts/")
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/" . "documents/")
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/" . "src/")
+ ("/home/andrew/Projects/docpad/oppenlanderco/" . "site/")
+ ("/home/andrew/Projects/docpad/" . "testsite/")
+ ("/home/andrew/Projects/moai/Donkeys/" . "modules/")
+ ("/home/andrew/Projects/moai/" . "Donkeys/")
+ ("/home/andrew/Projects/" . "oppenlanderco/")
+ ("/home/andrew/public_html/" . "wordpress/")
+ ("/home/andrew/" . "Projects/")
+ ("/etc/apache2/" . "conf.d/")
+ ("/etc/" . "mysql/")
+ ("/" . "etc/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/andrew/Projects/oppenlanderco/site/"
+ "/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/bin/"
+ "/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/logs/"
+ "/etc/mysql/"
+ "/etc/mysql/conf.d/"
+ "/home/andrew/Projects/oppenlanderco/"
+ "/home/andrew/Projects/oppenlanderco/content/"
+ "/home/andrew/Projects/oppenlander-blog/"
+ "/home/andrew/Projects/oppenlanderco-pelican/"
+ "/home/andrew/Projects/oppenlanderco-pelican/content/"
+ "/home/andrew/Projects/oppenlanderco-pelican/content/pages/"
+ "/home/andrew/Projects/oppenlanderco-pelican/content/cat/"
+ "/home/andrew/Projects/oppenlanderco-nanoc/"
+ "/home/andrew/Projects/oppenlanderco-nanoc/lib/"
+ "/home/andrew/Projects/oppenlanderco-nanoc/content/"
+ "/home/andrew/Projects/oppenlanderco-jekyll/"
+ "/home/andrew/Projects/oppenlanderco-nanoc/layouts/"
+ "/home/andrew/Projects/oppenlanderco/_layouts/"
+ "/home/andrew/Projects/oppenlanderco-jekyll/_layouts/"
+ "/home/andrew/Projects/oppenlanderco/_posts/"
+ "/home/andrew/Projects/oppenlanderco/src/layouts/"
+ "/home/andrew/Projects/oppenlanderco/src/documents/"
+ "/home/andrew/Projects/oppenlanderco/src/documents/pages/"
+ "/home/andrew/Projects/docpad/testsite/"
+ "/home/andrew/.emacs.d/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/templates/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/bamboo-cutter/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/authors/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/hello-world/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/css/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/red-herring/"
+ "/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/another-test/"
+ "/home/andrew/Projects/kivy/pong/"
+ "/home/andrew/ignifuga/tools/modules/python/"
+ "/home/andrew/ignifuga/tools/"
+ "/home/andrew/ignifuga/tools/patches/"
+ "/home/andrew/ignifuga/tmp/intel_linux64/python/"
+ "/home/andrew/ignifuga/src/components/"
+ "/home/andrew/ignifuga/tmp/intel_linux64/ignifuga/cython_src/"
+ "/home/andrew/ignifuga/tools/modules/"
+ "/home/andrew/Projects/docpad/oppenlanderco/site/src/documents/"
+ "/home/andrew/Projects/docpad/oppenlanderco/site/src/layouts/"
+ "/home/andrew/Projects/docpad/oppenlanderco/site/src/files/"
+ "/home/andrew/Projects/docpad/oppenlanderco/site/"
+ "/home/andrew/Projects/docpad/oppenlanderco/site/src/documents/scripts/"
+ "/home/andrew/Projects/moai/Donkeys/modules/"
+ "/home/andrew/Projects/moai/Donkeys/states/"
+ "/home/andrew/Projects/moai/Donkeys/levels/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "_config.yml"
+ "config.rb"
+ "catalina.sh"
+ "catalina.2013-05-23.log"
+ "catalina.out"
+ "hippo-cms.log"
+ "my.cnf"
+ "lower_case_table_names.cnf"
+ "mysqld_safe_syslog.cnf"
+ "debian.cnf"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/andrew/Projects/oppenlanderco/site/" (20923 51963 259797 559000) ".gitignore" "config.ru" ".git/" ".travis.yml" "../" "public/" "source/" "plugins/" ".powrc" "README.markdown" ".gitattributes" "Gemfile.lock" ".editorconfig" ".rbenv-version" ".rvmrc" "_config.yml" "Rakefile" "CHANGELOG.markdown" "config.rb" "sass/" ".themes/" "Gemfile" ".slugignore" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/" (20923 51843 969349 32000) "../" "site/" "./")
+
+ ("/home/andrew/Projects/" (20923 51843 969349 32000) "docpad/" "../" "radtest/" "wintersmith/" "thesis_184_multiauthor/" "clarkdave.net-master/" "shareaholic/" "oppenlanderco-pelican/" "oppenlanderco/" "kivy/" "moai/" "AndroidStudioProjects/" "Co-Author Plus Display/" "oppenlander-blog/" "ignifuga/" "nanoc-site/" "pelican-themes-master/" "qtcreator/" "coauthor_plus_display/" "oppenlander-middleman/" "pokemon-radio/" "./" "cocos2d-tutorials/" "DonkeysGame/")
+
+ ("/home/andrew/" (20917 18265 58203 518000) ".adobe/" ".bundler/" ".viminfo" "build.log" ".pip/" "kdenlive/" ".kdevduchain/" "Projects/" ".dropbox-dist/" ".bash_history" ".thumbnails/" "Documents/" ".gstreamer-0.10/" ".android/" ".xsession-errors.old" ".cache/" "../" ".swt/" ".node-gyp/" ".ssh/" ".local/" ".steampid" ".dmrc" "VirtualBox VMs/" ".mysql_history" "Pictures/" ".AndroidStudioPreview/" ".pulse/" "Dropbox/" ".gegl-0.0/" "public_html/" ".fontconfig/" "Videos/" ".xsession" ".mplayer/" ".steam/" ".openshot/" ".goutputstream-HLCQXW" "glassfish3/" ".gphoto/" "Mount/" ".vmware/" "Templates/" ".emacs.d/" ".freerdp/" "Libs/" ".face" "Music/" ".audacity-data/" ".ZeroBraneStudio" ".freeplane/" ".gvfs/" ".designer/" ".mission-control/" "Apps/" ".gitk" ".gem/" "vmware/" ".bashrc" ".pulse-cookie" "tmp/" "Work/" ".gksu.lock" ".dbus/" ".goutputstream-F1KYVW" "ignifuga/" ".npm/" "build-log.xml" ".macromedia/" ".bash_logout" ".kde/" ".VirtualBox/" ".wine/" ".gimp-2.6/" ".gradle/" ".profile" ".smex-items" ".Xauthority" ".goutputstream-ITBHXW" "Public/" ".xsession-errors" ".gconf/" ".dropbox/" "Workspaces/" ".steampath" "Virtual Machines/" ".kivy/" ".gnome2/" ".mozilla/" ".remmina/" ".gnome2_private/" ".ICEauthority" ".pki/" ".xmind/" ".Skype/" "Downloads/" ".xsession.swp" ".config/" "./" ".java/" ".gtk-bookmarks" ".asepriterc")
+
+ ("/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/bin/" (20896 5485 627240 900000) "bootstrap.jar" "../" "catalina.bat" "setclasspath.sh" "commons-daemon.jar" "tool-wrapper.sh" "tool-wrapper.bat" "shutdown.sh" "commons-daemon-native.tar.gz" "digest.bat" "shutdown.bat" "setclasspath.bat" "version.bat" ".#catalina.sh" "catalina-tasks.xml" "startup.bat" "catalina.sh" "cpappend.bat" "digest.sh" "version.sh" "startup.sh" "tomcat-native.tar.gz" "tomcat-juli.jar" "./")
+
+ ("/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/logs/" (20896 5244 194745 460000) "../" "manager.2013-05-24.log" "catalina.2013-05-24.log" "catalina.out" "host-manager.2013-05-24.log" "./" "localhost.2013-05-24.log")
+
+ ("/etc/mysql/" (20894 47963 95283 756000) "../" "my.cnf" "debian-start" "conf.d/" "debian.cnf" "./")
+
+ ("/home/andrew/Work/Glaws/Servers/" (20890 53446 646151 364000) "../" "apache-tomcat-6.0.32-portal/" "apache-tomcat-6.0.32-cms/" "./")
+
+ ("/home/andrew/Work/Glaws/Servers/apache-tomcat-6.0.32-cms/" (20890 61525 14683 407000) "webapps/" "RUNNING.txt" "../" "RELEASE-NOTES" "NOTICE" "bin/" "derby.log" "common/" "temp/" "shared/" "LICENSE" "lib/" "conf/" "work/" "logs/" "./")
+
+ ("/etc/mysql/conf.d/" (20894 47621 301201 819000) "../" "mysqld_safe_syslog.cnf" "lower_case_table_names.cnf" "./")
+
+ ("/etc/" (20894 44454 877537 851000) "motd" "java-6-openjdk/" "brlapi.key" "rc3.d/" "odbc.ini" "ld.so.conf" "emacs/" "ghostscript/" "sensors.d/" "bash_completion" "rc0.d/" "python2.7/" "sgml/" "adjtime" ".pwd.lock" "nsswitch.conf" "legal" "gtk-3.0/" "rc6.d/" "gai.conf" "init.d/" "cron.daily/" "profile.d/" "ca-certificates/" "insserv/" "wgetrc" "snmp/" "pnm2ppa.conf" "group" "console-setup/" "dpkg/" "fstab" "hosts" "lsb-release" "defoma/" "zsh_command_not_found" "wpa_supplicant/" "javascript-common/" "dhcp3/" "speech-dispatcher/" "gconf/" "gshadow-" "rmt" "inputrc" "hosts.deny" "lightdm/" "papersize" "apache2/" "passwd-" "apg.conf" "update-notifier/" "request-key.conf" "gtk-2.0/" "openal/" "printcap" "cron.hourly/" "samba/" "magic.mime" "adduser.conf" "apport/" "cron.d/" "acpi/" "rsyslog.conf" "shells" "vga/" "gnome-vfs-2.0/" "cron.monthly/" "libpaper.d/" "sensors3.conf" "alternatives/" "profile" "mime.types" "ODBCDataSources/" "resolvconf/" "ts.conf" "bash_completion.d/" "mke2fs.conf" "nanorc" "doc-base/" "ca-certificates.conf" "systemd/" "terminfo/" "ginn/" "emacs-snapshot/" "lsb-base/" "security/" "sane.d/" "avahi/" "modules" "hdparm.conf" "groff/" "dhcp/" "crontab" "debconf.conf" "vmware-installer/" "apm/" "logrotate.conf" "kernel-img.conf" "networks" "ucf.conf" "insserv.conf" "rc2.d/" "vmware-vix/" "wildmidi/" "odbcinst.ini" "fonts/" "bluetooth/" "manpath.config" "depmod.d/" "hostname" "group-" "rsyslog.d/" "netscsid.conf" "ssh/" "skel/" "pulse/" "thnuclnt/" "pam.d/" "vtrgb" "cupshelpers/" "lsb-base-logging.sh" "deluser.conf" "usb_modeswitch.conf" "xml/" "gdb/" "apt/" "mtab" "UPower/" "gnome-settings-daemon/" "hosts.allow" "services" "anacrontab" "python/" "pm/" "issue.net" "avserver.conf" "xdg/" "colord.conf" "insserv.conf.d/" "kernel/" "rc1.d/" "bonobo-activation/" "obex-data-server/" "libao.conf" "cups/" "rc.local" "update-manager/" "polkit-1/" "init/" "locale.alias" "fstab.d/" "localtime" "gshadow" "rc4.d/" "firefox/" "vmware/" "sysctl.d/" "hp/" "blkid.tab" "bash.bashrc" "mailcap" "timidity/" "php5/" "apparmor/" "initramfs-tools/" "pkcs11/" "grub.d/" "protocols" "sudoers.d/" "kbd/" "pam.conf" "chatscripts/" "default/" "iproute2/" "mtab.fuselock" "groovy/" "kde3/" "magic" "environment" "network/" "rcS.d/" "rpc" "vim/" "host.conf" "ldap/" "usb_modeswitch.d/" "brltty/" "brltty.conf" "passwd" "update-motd.d/" "ConsoleKit/" "logrotate.d/" "esound/" "timezone" "pcmcia/" "calendar/" "vdpau_wrapper.cfg" "gnome-app-install/" "dbus-1/" "issue" "shadow-" "libnl-3/" "debian_version" "ld.so.conf.d/" "dkms/" "wodim.conf" "blkid.conf" "xul-ext/" "ufw/" "gnome/" "perl/" "preload.conf" "modprobe.d/" "mercurial/" "foomatic/" "at-spi2/" "ltrace.conf" "dictionaries-common/" "NetworkManager/" "rc5.d/" "os-release" "ntp.conf" "ld.so.cache" "ppp/" "sysctl.conf" "icedtea-web/" "apparmor.d/" "shadow" "newt/" "ifplugd/" "cron.weekly/" "upstream-release/" "X11/" "fuse.conf" "mysql/" "mailcap.order" "mtools.conf" "lighttpd/" "sudoers" "sound/" "opt/" "mono/" "ssl/" "resolv.conf" "gimp/" ".java/" "ImageMagick/" "login.defs" "logcheck/" "bindresvport.blacklist" "mplayer/" "securetty" "udev/" "at.deny" "../" "./")
+
+ ("/home/andrew/Work/" (20890 53402 767019 850000) "../" "Glaws/" "./")
+
+ ("/home/andrew/Work/Glaws/" (20894 43947 358749 532000) "Workspace-2.9.2/" "../" "Workspace/" "Glawsdata/" "Springsource/" "Source/" "Servers/" "./")
+
+ ("/home/andrew/Work/Glaws/Source/" (20890 53983 772858 428000) "../" "glaws/" "./")
+
+ ("/home/andrew/Work/Glaws/Source/glaws/" (20890 54249 466245 760000) ".gitignore" "StrongETagDirContext/" ".git/" "../" "terms/" "schat/" "php/" "daolayer/" "map-maker/" "openFireCreateChatRoomCmd.txt" "glawsdata-BAK/" "jspellchecker/" "co.glaws.base/" "sql/" "portal/" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/content/" (20875 2594 217099 434000) "robots.txt.erb" "about.md" "community.md" "../" "release-notes.md" "development/" "index.html" "sitemap.xml.erb" "install.md" "docs/" "development.md" "the-road-to-nanoc-4-0.md" "404.html" "assets/" "docs.md" "./")
+
+ ("/home/andrew/Projects/oppenlander-blog/" (20874 64732 185714 726000) ".gitignore" "../" "compass_config.rb" ".#compass_config.rb" "source/" ".bundle/" "Gemfile.lock" "config.rb" "Gemfile" "./")
+
+ ("/home/andrew/.emacs.d/" (20873 43684 637499 291000) "my-misc.el" "my-misc.el~" "setup-scala-mode.el" "../" "setup-web-mode.el" "site-lisp/" ".places" "setup-python-mode.el" "eshell/" "session.10d7ab8ec4e605a718136598077267145000000014370066" "mode-mappings.el" "setup-lua-mode.el" "setup-ido.el" " (achamian's conflicted copy 2013-05-07).places" "ac-comphist.dat" "session.10b1710dbba4a0a830136667774042171600000021000052" "elpa/" "url/" "ido.last" "npm-debug.log" "setup-clojure-mode.el" "setup-slime-js.el" "setup-js2-mode.el" "backups/" "session.106be1abc8c38bab0d136788343726093600000015630092" "init.el" "typescript.el" "auto-save-list/" "ensime/" "session.10ebec3655a0e83e89136123218319481900000028400055" "setup-package.el" "./" "setup-yasnippet.el")
+
+ ("/home/andrew/Projects/oppenlanderco-pelican/" (20870 61073 297593 133000) "pelican.pid" "../" "develop_server.sh" "srv.pid" "content/" "output/" "pelicanconf.py" "Makefile" "publishconf.py" "pelicanconf.pyc" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-pelican/content/" (20870 60539 806526 457000) "2012-12-20-this-is-an-article.md" "../" "article1.rst" "cat/" "pages/" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-pelican/content/pages/" (20870 57911 120520 199000) "about.md" "../" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-pelican/content/cat/" (20870 57869 535948 539000) "../" "article2.md" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-nanoc/content/" (20870 52809 392690 448000) "../" "about.html.md" "index.html.md" "stylesheet.less" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-nanoc/" (20870 54581 386271 773000) "crash.log" "../" "static/" "nanoc.yaml" "layouts/" "content/" "output/" "tmp/" "Rakefile" "Rules" "lib/" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-nanoc/lib/" (20870 52468 659418 388000) "../" "helper.rb" "default.rb" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/_layouts/" (20870 43015 89895 884000) "../" "page.html" "post.html" "default.html" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-nanoc/layouts/" (20870 46771 581311 41000) "../" "default.html" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-jekyll/_layouts/" (20869 44344 947491 222000) "../" "page.html" "post.html" "default.html" "./")
+
+ ("/home/andrew/Projects/oppenlanderco-jekyll/" (20869 58599 21150 234000) "_includes/" ".gitignore" "_posts/" ".git/" "../" "_plugins/" "_site/" "tags.html" "sitemap.txt" "archive.html" ".#_config.yml" "categories.html" ".projectile" "changelog.md" "atom.xml" "_layouts/" "_config.yml" "README.md" "pages.html" "Rakefile" "404.html" "assets/" "index.md" "./" "rss.xml")
+
+ ("/home/andrew/Projects/oppenlanderco/_includes/" (20869 59724 396285 246000) ".#tags_list" "../" "categories_list" "pages_list" "./" "analytics")
+
+ ("/home/andrew/Projects/oppenlanderco/_posts/" (20869 55466 264037 499000) "2013-05-04-introduction.md" "../" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/src/layouts/" (20869 24728 586132 791000) "default.html.jade" "../" "page.html.jade" "post.html.jade" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/src/documents/" (20869 31231 58587 937000) "../" "index.html.jade" "500.html.jade" "posts/" "atom.xml.eco" "styles/" "scripts/" "404.html.jade" "pages/" "./")
+
+ ("/home/andrew/Projects/docpad/" (20869 25903 896207 210000) "../" "test3/" "test2/" "testsite/" "./")
+
+ ("/home/" (20834 33 645499 803000) "../" "andrew/" "./")
+
+ ("/home/andrew/Projects/oppenlanderco/src/documents/pages/" (20869 24728 574131 453000) "../" "hello.html.md" "./" "posts.html.jade")
+
+ ("/home/andrew/Projects/oppenlanderco/src/" (20869 24728 586132 791000) "../" "documents/" "files/" "layouts/" "./")
+
+ ("/home/andrew/Projects/docpad/testsite/" (20869 24909 706298 379000) "../" "docpad.coffee" "package.json" "node_modules/" "src/" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/templates/" (20869 22822 328680 612000) "article.jade" "../" "layout.jade" "feed.jade" "archive.jade" "index.jade" "author.jade" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/hello-world/" (20869 22702 223683 719000) "../" "index.md" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/" (20869 22537 81800 38000) "config.json" "../" "templates/" ".projectile" "build/" "contents/" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/css/" (20869 20332 630955 928000) "../" "github.css" "main.css" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/red-herring/" (20869 20332 634956 361000) "../" "banana.jpg" "index.md" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/bamboo-cutter/" (20869 20332 634956 361000) "../" "Taketori_Monogatari.jpg" "index.md" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/another-test/" (20869 20332 634956 361000) "../" "index.md" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/articles/" (20869 20332 630955 928000) "bamboo-cutter/" "../" "red-herring/" "hello-world/" "another-test/" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/authors/" (20869 20332 630955 928000) "../" "baker.json" "the-wintersmith.json" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/site/contents/" (20869 20332 626955 496000) "../" "feed.json" "css/" "authors/" "articles/" "archive.md" "index.json" "./")
+
+ ("/home/andrew/Projects/wintersmith/oppenlanderco/" (20869 21330 554542 873000) "../" "site/" "./")
+
+ ("/home/andrew/Projects/wintersmith/" (20865 47456 759952 110000) "../" "oppenlanderco/" "./")
+
+ ("/home/andrew/Projects/kivy/pong/" (20869 16380 785323 601000) ".ropeproject/" "../" ".projectile" "pong.py" "pong.kv" "build/" "./")
+
+ ("/home/andrew/Projects/kivy/pong/.ropeproject/" (20868 44095 411482 296000) "../" "config.py" "./")
+
+ ("/home/andrew/Projects/kivy/" (20868 43993 477681 309000) "../" "pong/" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/documents/scripts/" (20865 52490 67320 448000) "../" "script.js.coffee" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/" (20865 55629 27131 202000) ".gitignore" ".git/" "../" "docpad.coffee" "package.json" "README.md" "node_modules/" "src/" "./")
+
+ ("/home/andrew/ignifuga/tmp/intel_linux64/ignifuga/cython_src/" (20868 30583 216080 702000) "Rocket+Core+Python+precompiled.cpp" "Rocket+Core+PropertyParserKeyword.cpp" "boost+numeric.cpp" "Rocket+Core+FontFaceLayer.cpp" "ignifuga_glue.c" "boost+module.cpp" "Rocket+Core+LayoutLineBox.cpp" "Rocket+Debugger+ElementLog.cpp" "Rocket+Core+FontEffectNoneInstancer.cpp" "Rocket+Core+Python+ContextProxy.cpp" "boost+long.cpp" "Rocket+Debugger+ElementContextHook.cpp" "Rocket+Core+Element.cpp" "Rocket+Core+PropertySpecification.cpp" "Rocket+Core+LayoutBlockBox.cpp" "embedded+splash.cpp" "Rocket+Core+Template.cpp" "boost+tuple.cpp" "Rocket+Controls+InputTypeSubmit.cpp" "Rocket+Core+XMLParser.cpp" "Rocket+Core+Context.cpp" "backends+sdl+SDL_Image.cpp" "rfoo+__init__.cpp" "backends+sdl+SDL.cpp" "Rocket+Core+Stream.cpp" "Rocket+Controls+ElementFormControlDataSelect.cpp" "spine+spine+BaseAtlas.cpp" "Rocket+Core+ElementStyleCache.cpp" "Rocket+Core+Plugin.cpp" "Rocket+Core+ContextInstancer.cpp" "Rocket+Core+Python+EventInterface.cpp" "Gilbert.cpp" "Rocket+Core+DecoratorTiledImageInstancer.cpp" "embedded+__init__.cpp" "Rocket+Controls+Python+DataFormatterWrapper.cpp" "Rocket+Controls+WidgetTextInputMultiLine.cpp" "Rocket+Core+precompiled.cpp" "rfoo+marsh.cpp" "Rocket+Core+Clock.cpp" "Rocket+Core+TextureResource.cpp" "Rocket+Core+FontFaceHandle.cpp" "Rocket+Core+Python+ElementStyleProxy.cpp" "spine+spine-sdl2+AtlasAttachmentLoader.cpp" "FileWatcher+__init__.cpp" "Rocket+Core+Decorator.cpp" "Rocket+Core+FontEffectNone.cpp" "Rocket+Core+URL.cpp" "Rocket+Core+DecoratorTiledBox.cpp" "boost+converter+from_python.cpp" "Rocket+Core+XMLNodeHandlerDefault.cpp" "Rocket+Controls+ElementForm.cpp" "Rocket+Core+Python+EventListenerInstancer.cpp" "Rocket+Controls+Python+Module.cpp" "Rocket+Core+ElementImage.cpp" "rfoo+utils+__init__.cpp" "components+__init__.cpp" "spine+spine-sdl2+SkeletonJson.cpp" "Rocket+Core+DecoratorTiledImage.cpp" "rfoo+utils+rconsole.cpp" "Rocket+Core+PropertyParserColour.cpp" "spine+spine-sdl2+RegionAttachment.cpp" "Rocket+Core+DecoratorTiledHorizontal.cpp" "spine+spine+Animation.cpp" "Rocket+Core+Python+ElementAttributeProxy.cpp" "Rocket+Core+FontEffectInstancer.cpp" "rfoo+_rfoo.cpp" "Rocket+Core+DecoratorTiled.cpp" "Rocket+Core+TextureLayoutTexture.cpp" "backends+sdl+GameLoop.cpp" "Rocket+Controls+ElementTextSelection.cpp" "Rocket+Core+EventInstancer.cpp" "components+Component.cpp" "backends+FontBase.cpp" "backends+sdl+DataManager.cpp" "Rocket+Core+EventInstancerDefault.cpp" "boost+object+function.cpp" "Rocket+Core+FontFamily.cpp" "Rocket+Core+FontDatabase.cpp" "boost+object+life_support.cpp" "boost+import.cpp" "Entity.cpp" "boost+object+class.cpp" "boost+converter+builtin_converters.cpp" "Rocket+Core+DecoratorInstancer.cpp" "Rocket+Core+WidgetSlider.cpp" "Rocket+Controls+Controls.cpp" "Rocket+Core+FontFace.cpp" "Rocket+Core+TextureLayout.cpp" "Rocket+Core+SystemInterface.cpp" "Rocket+Core+StyleSheetNodeSelectorNthOfType.cpp" "Rocket+Core+ElementDefinition.cpp" "Scene.cpp" "spine+json+json_value.cpp" "Rocket+Core+StyleSheetParser.cpp" "Rocket+Core+StyleSheetNodeSelectorOnlyChild.cpp" "boost+object+pickle_support.cpp" "FileWatcher+FileWatcherOSX.cpp" "Rocket+Core+EventDispatcher.cpp" "components+Pathfinder.cpp" "Rocket+Core+Core.cpp" "spine+spine-sdl2+Atlas.cpp" "Rocket+Core+FileInterface.cpp" "Rocket+Core+Python+ElementChildrenProxy.cpp" "Log.cpp" "Rocket+Controls+DataSourceListener.cpp" "Rocket+Controls+InputTypeRadio.cpp" "Rocket+Core+FontEffect.cpp" "Rocket+Controls+WidgetTextInputSingleLine.cpp" "backends+CanvasBase.cpp" "Rocket+Core+Python+EventInstancer.cpp" "boost+converter+type_id.cpp" "spine+spine+Slot.cpp" "Rocket+Controls+ElementDataGrid.cpp" "Rocket+Core+LayoutInlineBox.cpp" "Rocket+Core+EventListenerInstancer.cpp" "Rocket+Debugger+Plugin.cpp" "Rocket+Core+FontEffectOutlineInstancer.cpp" "backends+sdl+Sound.cpp" "Rocket+Controls+ElementFormControlTextArea.cpp" "Rocket+Core+StyleSheetNodeSelectorFirstOfType.cpp" "Rocket+Core+StringUtilities.cpp" "Rocket+Core+DocumentHeader.cpp" "FileWatcher+FileWatcher.cpp" "Rocket+Core+DecoratorTiledInstancer.cpp" "Rocket+Core+Property.cpp" "spine+json+json_reader.cpp" "boost+slice.cpp" "boost+list.cpp" "boost+object_operators.cpp" "Rocket+Controls+WidgetSlider.cpp" "Rocket+Core+StyleSheetNodeSelectorOnlyOfType.cpp" "backends+sdl+Font.cpp" "backends+__init__.cpp" "Rocket+Controls+XMLNodeHandlerDataGrid.cpp" "Rocket+Controls+ElementTabSet.cpp" "Rocket+Debugger+SystemInterface.cpp" "boost+wrapper.cpp" "Rocket+Core+ElementInstancer.cpp" "Rocket+Core+FontEffectShadowInstancer.cpp" "Rocket+Core+TextureLayoutRow.cpp" "backends+sdl+__init__.cpp" "Rocket+Core+PluginRegistry.cpp" "Rocket+Controls+ElementFormControlSelect.cpp" "boost+converter+arg_to_python_base.cpp" "Rocket+Core+XMLNodeHandler.cpp" "Rocket+Core+StyleSheetNodeSelectorFirstChild.cpp" "backends+sdl+RocketGlue.cpp" "Rocket+Core+Python+Utilities.cpp" "Rocket+Core+Python+Module.cpp" "spine+spine+Skin.cpp" "Rect.cpp" "components+Text.cpp" "Rocket+Controls+ElementFormControl.cpp" "Rocket+Core+ElementText.cpp" "boost+object+function_doc_signature.cpp" "Rocket+Core+XMLNodeHandlerHead.cpp" "backends+sdl+Canvas.cpp" "Rocket+Core+Math.cpp" "Rocket+Core+Python+DataSourceWrapper.cpp" "Rocket+Core+LayoutEngine.cpp" "Rocket+Core+Python+EventListener.cpp" "Rocket+Controls+InputTypeText.cpp" "Rocket+Core+DecoratorNoneInstancer.cpp" "Rocket+Core+ElementScroll.cpp" "backends+sdl+Rocket.cpp" "Rocket+Core+StyleSheetNodeSelectorNthLastOfType.cpp" "components+Viewable.cpp" "Rocket+Controls+ElementDataGridCell.cpp" "Rocket+Core+ContextInstancerDefault.cpp" "Rocket+Controls+WidgetDropDown.cpp" "boost+object+stl_iterator.cpp" "Rocket+Core+Python+ContextInterface.cpp" "Rocket+Controls+WidgetSliderInput.cpp" "Rocket+Core+FileInterfaceDefault.cpp" "boost+object_protocol.cpp" "Rocket+Core+StyleSheetFactory.cpp" "Rocket+Core+FontEffectOutline.cpp" "spine+spine+BaseRegionAttachment.cpp" "Rocket+Controls+XMLNodeHandlerTextArea.cpp" "Rocket+Core+StringCache.cpp" "Rocket+Core+ConvolutionFilter.cpp" "Rocket+Core+ElementStyle.cpp" "Rocket+Core+StyleSheet.cpp" "Rocket+Core+ElementTextDefault.cpp" "boost+str.cpp" "Rocket+Controls+WidgetTextInputSingleLinePassword.cpp" "Rocket+Core+Vector2.cpp" "Rocket+Core+ElementReference.cpp" "Rocket+Core+StreamMemory.cpp" "boost+object+enum.cpp" "backends+DataManagerBase.cpp" "boost+exec.cpp" "backends+sdl+Sprite.cpp" "Rocket+Core+PropertyParserNumber.cpp" "Rocket+Controls+InputType.cpp" "Rocket+Core+BaseXMLParser.cpp" "Rocket+Core+Factory.cpp" "FileWatcher+FileWatcherWin32.cpp" "Rocket+Core+String.cpp" "Rocket+Controls+InputTypeCheckbox.cpp" "spine+json+json_writer.cpp" "backends+GameLoopBase.cpp" "Rocket+Core+RenderInterface.cpp" "Rocket+Core+TextureLayoutRectangle.cpp" "Rocket+Controls+SelectOption.cpp" "Rocket+Controls+Python+DataGridRowProxy.cpp" "Rocket+Core+DecoratorNone.cpp" "Rocket+Core+Box.cpp" "Rocket+Core+Python+ElementDocumentWrapper.cpp" "spine+spine-sdl2+Skeleton.cpp" "Rocket+Core+Python+ContextInstancer.cpp" "Rocket+Core+StyleSheetNodeSelector.cpp" "Rocket+Debugger+Debugger.cpp" "Rocket+Core+LayoutBlockBoxSpace.cpp" "boost+errors.cpp" "Rocket+Core+TextureDatabase.cpp" "Rocket+Controls+ElementFormControlInput.cpp" "boost+dict.cpp" "Rocket+Core+StyleSheetNodeSelectorLastChild.cpp" "Rocket+Controls+Python+precompiled.cpp" "Rocket+Core+StyleSheetNodeSelectorNthLastChild.cpp" "backends+sdl+Renderer.cpp" "Rocket+Core+Python+ContextDocumentProxy.cpp" "Rocket+Core+Python+ElementInterface.cpp" "Rocket+Core+Event.cpp" "Rocket+Core+ElementUtilities.cpp" "Rocket+Core+Dictionary.cpp" "Rocket+Core+ElementDocument.cpp" "spine+spine+BaseSkeleton.cpp" "spine+spine+SkeletonData.cpp" "Rocket+Core+GeometryUtilities.cpp" "Rocket+Core+DecoratorTiledVertical.cpp" "__init__.cpp" "Rocket+Controls+InputTypeRange.cpp" "Rocket+Core+StreamFile.cpp" "Rocket+Debugger+ElementInfo.cpp" "Rocket+Controls+XMLNodeHandlerTabSet.cpp" "Rocket+Core+XMLNodeHandlerBody.cpp" "Rocket+Core+FontEffectShadow.cpp" "Rocket+Core+PropertyParserString.cpp" "Rocket+Core+StyleSheetSpecification.cpp" "Singleton.cpp" "Rocket+Core+PropertyDictionary.cpp" "Rocket+Core+StyleSheetNode.cpp" "Rocket+Controls+ElementDataGridRow.cpp" "Rocket+Core+DecoratorTiledBoxInstancer.cpp" "backends+sdl+Spine.cpp" "Rocket+Core+WidgetSliderScroll.cpp" "Rocket+Core+Python+EventWrapper.cpp" "Rocket+Core+LayoutInlineBoxText.cpp" "Rocket+Controls+InputTypeButton.cpp" "Rocket+Debugger+Geometry.cpp" "Rocket+Core+PropertyDefinition.cpp" "Rocket+Core+Log.cpp" "Rocket+Controls+ElementDataGridExpandButton.cpp" "Rocket+Core+TemplateCache.cpp" "Rocket+Core+XMLNodeHandlerTemplate.cpp" "components+Action.cpp" "Rocket+Core+Texture.cpp" "Rocket+Core+ElementDecoration.cpp" "Rocket+Core+ElementHandle.cpp" "boost+object+iterator.cpp" "Rocket+Core+ReferenceCountable.cpp" "Rocket+Controls+Python+ElementInterface.cpp" "Rocket+Core+Python+Interfaces.cpp" "Rocket+Core+Geometry.cpp" "FileWatcher+FileWatcherLinux.cpp" "backends+sdl+components.cpp" "boost+object+inheritance.cpp" "Task.cpp" "Rocket+Controls+Python+SelectOptionProxy.cpp" "pQuery.cpp" "spine+spine+Bone.cpp" "Rocket+Core+StyleSheetNodeSelectorNthChild.cpp" "Rocket+Core+Variant.cpp" "Rocket+Core+UnicodeRange.cpp" "Rocket+Core+DecoratorTiledHorizontalInstancer.cpp" "Rocket+Controls+DataQuery.cpp" "Rocket+Core+StyleSheetNodeSelectorEmpty.cpp" "Rocket+Controls+DataSource.cpp" "Rocket+Controls+WidgetTextInput.cpp" "spine+spine+BaseSkeletonJson.cpp" "Rocket+Controls+DataFormatter.cpp" "Rocket+Controls+Clipboard.cpp" "Rocket+Core+ElementBorder.cpp" "Rocket+Core+Python+Converters.cpp" "Rocket+Core+WString.cpp" "Rocket+Core+ElementBackground.cpp" "Rocket+Core+GeometryDatabase.cpp" "boost+converter+registry.cpp" "Rocket+Controls+Python+DataSourceWrapper.cpp" "Rocket+Core+XMLParseTools.cpp" "Rocket+Core+StyleSheetNodeSelectorLastOfType.cpp" "Rocket+Core+DecoratorTiledVerticalInstancer.cpp" "../" "./")
+
+ ("/home/andrew/ignifuga/src/components/" (20867 14339 820639 134000) "Component.py" "../" "Action.py" "Viewable.py" "Pathfinder.pyx" "Text.py" "Pathfinder.pxd" "__init__.py" "./")
+
+ ("/home/andrew/ignifuga/tmp/intel_linux64/python/" (20868 40481 752244 883000) "PC/" "Tools/" "Python/" "Makefile.pre.in" "Mac/" "python-gdb.py" "Parser/" "../" "pyconfig.h.in" "Grammar/" "config.log" "PCbuild/" "Makefile.pre.in~" "config.status" "Include/" "configure" "Lib/" "Misc/" "libpython2.7.a" "Makefile" "Doc/" "README" "configure.in" "Demo/" "LICENSE" "Modules/" "RISCOS/" "Makefile.pre" "Objects/" "install-sh" "python-config" "./" "pyconfig.h")
+
+ ("/home/andrew/ignifuga/tools/modules/python/" (20868 40998 238253 745000) "intel_mingw64.py" "arm_android.py" "../" "intel_linux64.py" "intel_mingw32.py" "osx.py" "__init__.pyc" "intel_linux32.py" "ios.py" "intel_linux64.pyc" "__init__.py" "./")
+
+ ("/home/andrew/ignifuga/tools/modules/" (20868 26565 150065 499000) "env.pyc" "util.pyc" "../" "log.pyc" "pypreprocessor.pyc" "log.py" "__init__.pyc" "python/" "util.py" "sdl/" "project/" "pypreprocessor.py" "__init__.py" "env.py" "./")
+
+ ("/home/andrew/ignifuga/tools/" (20868 27356 538358 492000) "../" "schafer" "grossman" "modules/" "android_skeleton/" "bootstrap.py" "schafer.pyc" "purcell" "patches/" "grossman.py" "ios_skeleton/" "schafer.py" "./")
+
+ ("/home/andrew/ignifuga/" (20867 18307 879715 587000) "dist/" ".hgsubstate" "../" "host/" ".hgignore" "README.md" "tmp/" "tools/" ".hgsub" "LICENSE" "src/" "ignifuga.kdev4" "tests/" "AUTHORS" ".hg/" "./" "external/")
+
+ ("/home/andrew/ignifuga/tmp/intel_linux64/" (20867 14358 918671 755000) "jpgturbo/" "gc/" "../" "zlib/" "sdl_ttf/" "sdl_mixer/" "libpng/" "python/" "libogg/" "ignifuga/" "sdl/" "freetype/" "freezer/" "libvorbis/" "sdl_image/" "./")
+
+ ("/home/andrew/ignifuga/tools/patches/" (20867 7522 180970 466000) "platform.py.diff" "python.mingw32.diff" "SDL_android.cpp.diff" "../" "ElementAttributeProxy.cpp.i386-mingw32.diff" "multitouch.diff" "RenderCopyEx.diff" "python.ios.diff" "Android_GL_GetProcAddress.diff" "python.osx.diff" "import.c.diff" "site.py.diff" "python.android.diff" "./" "sdl_rendertotarget.diff")
+
+ ("/home/andrew/ignifuga/src/" (20867 7522 156968 238000) "Log.pxd" "components/" "FileWatcher/" "Log.pyx" "Scene.pxd" "../" "Entity.py" "backends/" "Gilbert.py" "Rect.pxd" "pQuery.py" "rfoo/" "Singleton.py" "embedded/" "SDL_ignifuga.h" "Scene.pyx" "Task.py" "__init__.py" "Rect.pyx" "./" "native_log.h")
+
+ ("/home/andrew/ignifuga/tmp/intel_linux64/ignifuga/" (20867 7522 0 0) "Log.pxd" "components/" "FileWatcher/" "Log.pyx" "cython_src/" "Scene.pxd" "../" "Entity.py" "backends/" "Rocket/" "spine/" "Gilbert.py" "Rect.pxd" "boost/" "pQuery.py" "rfoo/" "Singleton.py" "embedded/" "SDL_ignifuga.h" "Scene.pyx" "Task.py" "__init__.py" "Rect.pyx" "./" "native_log.h")
+
+ ("/home/andrew/ignifuga/tmp/" (20867 7577 134068 154000) "../" "intel_linux64/" "python_host/" "./")
+
+ ("/home/andrew/ignifuga/dist/intel_linux64/" (20867 7785 693415 20000) "../" "bin/" "man/" "share/" "include/" "lib/" "./")
+
+ ("/home/andrew/ignifuga/dist/" (20867 7725 967874 619000) "../" "intel_linux64/" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/documents/" (20865 52490 67320 448000) "../" "500.html" "styles/" "scripts/" "404.html" "index.html.eco" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/layouts/" (20865 52490 71320 887000) "../" "default.html.eco" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/files/" (20865 52490 71320 887000) "../" "crossdomain.xml" "images/" "robots.txt" "fonts/" "humans.txt" "ico/" "vendor/" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/src/" (20865 52490 71320 887000) "../" "documents/" "files/" "layouts/" "partials/" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/" (20865 52458 191811 277000) "../" "site/" "package.json" "node_modules/" "./")
+
+ ("/home/andrew/Projects/docpad/oppenlanderco/site/out/" (20865 49919 382918 401000) "../" "crossdomain.xml" "index.html" "robots.txt" "humans.txt" "styles/" ".htaccess" "scripts/" "404.html" "icons/" "./")
+
+ ("/home/andrew/Projects/DonkeysGame/" (20860 41850 663143 516000) "../" "Donkeys-android/" "Donkeys/" "Donkeys-desktop/" "./")
+
+ ("/home/andrew/Projects/moai/Donkeys/modules/" (20863 10141 930573 626000) "../" "input-manager.lua" "state-manager.lua" "utils.lua" "elements.lua" "savefile-manager.lua" "./")
+
+ ("/home/andrew/Projects/moai/Donkeys/states/" (20863 16875 862645 31000) "../" "state-main-menu.lua" "state-splash.lua" "state-game.lua" "./")
+
+ ("/home/andrew/Projects/moai/Donkeys/levels/" (20863 17779 546404 39000) "../" "level1.lua" "./")
+
+ ("/home/andrew/Projects/moai/Donkeys/" (20863 16332 246622 398000) "levels/" "../" "platforms/" "modules/" "donkeys.sublime-project" "resources/" "states/" "main.lua" "donkeys.sublime-workspace" "./")
+
+ ("/home/andrew/Projects/moai/" (20861 63164 361642 490000) "../" "Donkeys/" "rocket/" "./")
+
+ ("/home/andrew/Pictures/" (20834 2704 679399 86000) "../" "ramona_v_1920.jpg" "ramona_v_1920.jpg~" "./")
+
+ ("/home/andrew/Projects/cocos2d-tutorials/" (20861 32191 862571 865000) "hello.py" ".ropeproject/" "../" "hello-actions.py" "./")
+
+ ("/home/andrew/public_html/wordpress/" (20843 17995 787737 54000) "readme.html" "wp-config.php" "wp-admin/" "../" "index.php" "wp-trackback.php" "wp-includes/" "wp-content/" "wp-cron.php" "wp-mail.php" "wp-links-opml.php" "wp-comments-post.php" "license.txt" "wp-blog-header.php" "wp-config-sample.php" "wp-login.php" "wp-settings.php" "wp-load.php" "wp-activate.php" "wp-signup.php" "xmlrpc.php" "./")
+
+ ("/home/andrew/public_html/" (20843 16358 93545 877000) "../" "wordpress/" "./")
+
+ ("/etc/apache2/conf.d/" (20843 14995 854883 175000) "localized-error-pages" "../" "charset" "other-vhosts-access-log" "security" "./")
+
+ ("/etc/apache2/" (20843 15003 547383 749000) "../" "apache2.conf" "mods-available/" "sites-enabled/" "conf.d/" "httpd.conf" "magic" "ports.conf" "sites-available/" "./" "envvars" "mods-enabled/")
+
+ ("/var/" (20843 14102 202160 871000) "spool/" "lock/" "../" "log/" "www/" "backups/" "run/" "tmp/" "local/" "lib/" "crash/" "mail/" "opt/" "./" "cache/")
+
+ ("/var/www/" (20843 15003 507381 128000) "../" "index.html" "wordpress/" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
