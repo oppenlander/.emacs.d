@@ -12,9 +12,6 @@
   (indent-region (point-min) (point-max)))
 (add-hook 'before-save-hook 'cleanup-buffer-safe)
 
-;; Auto indent lines
-(global-set-key "\C-m" 'newline-and-indent)
-
 ;; Global line numbers
 (global-linum-mode 1)
 
@@ -73,10 +70,6 @@
                        ))
 (real-global-auto-complete-mode t)
 
-;; Autopair
-(require 'autopair)
-(autopair-global-mode)
-
 ;; Hide DOS line endings
 (defun remove-dos-eol ()
   (interactive)
@@ -89,5 +82,20 @@
 
 ;; Set global tab width
 (setq tab-width 4)
+
+;; Recent files
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; Goto last change
+(global-set-key "\C-x\C-\\" 'goto-last-change)
+
+;; Show matchin parentheses
+(show-paren-mode 1)
+
+;; Electric Pair
+(electric-pair-mode 1)
 
 (provide 'my-misc)

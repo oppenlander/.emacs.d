@@ -7,3 +7,7 @@ eshell/
 ac-comphist*
 session-*
 *~
+ido.last
+.places
+projectile-bookmarks.eld
+request/

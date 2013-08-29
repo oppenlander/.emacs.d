@@ -39,12 +39,10 @@
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 ;; Install extensions if they're missing
-;; TODO: list all packages I want installed here
 (require 'setup-package)
 (defun init--install-packages ()
   (packages-install
    (cons 'magit melpa)
-   (cons 'paredit melpa)
    (cons 'htmlize melpa)
    (cons 'slime-js marmalade)
    (cons 'clojure-mode melpa)
@@ -59,7 +57,6 @@
    (cons 'smooth-scroll melpa)
    (cons 'undo-tree melpa)
    (cons 'auto-complete melpa)
-   (cons 'autopair melpa)
    (cons 'web-mode melpa)
    (cons 'nlinum gnu)
    (cons 'evil melpa)
@@ -67,12 +64,19 @@
    (cons 'markdown-mode melpa)
    (cons 'haml-mode melpa)
    (cons 'yaml-mode melpa)
-   (cons 'elpy marmalade)
    (cons 'lua-mode melpa)
    (cons 'flymake-lua melpa)
    (cons 'coffee-mode melpa)
    (cons 'kivy-mode melpa)
-   (cons 'jade-mode melpa)))
+   (cons 'jade-mode melpa)
+   (cons 'python-pep8 marmalade)
+   (cons 'python-pylint marmalade)
+   (cons 'jedi melpa)
+   (cons 'ein melpa)
+   (cons 'nav melpa)
+   (cons 'org melpa)
+   (cons 'goto-last-change melpa)
+   (cons 'direx melpa)))
 (condition-case nil
     (init--install-packages)
   (error
@@ -85,7 +89,7 @@
 ;; Language specific extensions
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
-(eval-after-load 'python-mode '(require 'setup-python-mode))
+(eval-after-load 'python '(require 'setup-python-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (require 'typescript)
 (eval-after-load 'scala-mode2 '(require 'setup-scala-mode))
@@ -97,6 +101,7 @@
 (require 'coffee-mode)
 (setq coffee-tab-width 2)
 (require 'jade-mode)
+(require 'setup-yasnippet)
 
 ;; Map files to modes
 (require 'mode-mappings)

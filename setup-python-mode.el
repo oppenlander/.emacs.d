@@ -1,34 +1,20 @@
-;; Require python-mode for better python support
-;; (require 'python-mode)
-;; (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-;; (setq-default py-indent-offset 4)
+;; Check code style
+(require 'python-pep8)
 
-;; ;; ipython
-;; (require 'ipython)
+;; Check for errors
+(require 'python-pylint)
 
-;; ;; Check code style
-;; (require 'python-pep8)
+;; Virtualenv
+(require 'virtualenv)
 
-;; ;; Check for errors
-;; (require 'python-pylint)
+;; Completion
+(setq jedi:setup-keys t)
+(require 'jedi)
+(add-hook 'python-mode-hook 'jedi:setup)
 
-;; ;; Virtualenv
-;; (require 'virtualenv)
-
-;; ;; Pymacs
-;; (autoload 'pymacs-apply "pymacs")
-;; (autoload 'pymacs-call "pymacs")
-;; (autoload 'pymacs-eval "pymacs" nil t)
-;; (autoload 'pymacs-exec "pymacs" nil t)
-;; (autoload 'pymacs-load "pymacs" nil t)
-;; (setq py-load-pymacs-p t)
-
-;; ;; Ropemacs
-;; (require 'pymacs)
-;; (pymacs-load "ropemacs" "rope-")
-
-(elpy-enable)
-
-(add-hook 'python-mode-hook 'elpy-mode)
+;; IPython
+(require 'ipython)
+(require 'ein)
+(add-hook 'ein:connect-mode-hook 'ein:jedi-setup)
 
 (provide 'setup-python-mode)
