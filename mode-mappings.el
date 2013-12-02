@@ -64,4 +64,7 @@
 ;; Lua
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 
+;; Arduino
+(add-to-list 'auto-mode-alist '("\\.pde$" . c-mode))
+
 (provide 'mode-mappings)

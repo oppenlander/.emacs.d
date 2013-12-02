@@ -46,7 +46,9 @@
    (cons 'htmlize melpa)
    (cons 'slime-js marmalade)
    (cons 'clojure-mode melpa)
-   (cons 'nrepl melpa)
+   (cons 'clojure-test-mode melpa)
+   (cons 'cider melpa)
+   (cons 'rainbow-delimiters melpa)
    (cons 'js2-mode melpa)
    (cons 'js2-refactor melpa)
    (cons 'smex melpa)
@@ -76,7 +78,10 @@
    (cons 'nav melpa)
    (cons 'org melpa)
    (cons 'goto-last-change melpa)
-   (cons 'direx melpa)))
+   (cons 'direx melpa)
+   (cons 'ac-math melpa)
+   (cons 'prolog melpa)
+   (cons 'ediprolog gnu)))
 (condition-case nil
     (init--install-packages)
   (error
@@ -102,6 +107,8 @@
 (setq coffee-tab-width 2)
 (require 'jade-mode)
 (require 'setup-yasnippet)
+(eval-after-load 'latex-mode '(require 'setup-latex-mode))
+(eval-after-load 'prolog-mode '(require 'setup-prolog-mode))
 
 ;; Map files to modes
 (require 'mode-mappings)
