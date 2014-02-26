@@ -7,4 +7,7 @@
 ;; Script (JavaScript, Java, PHP) offset
 (setq web-mode-code-indent-offset 2)
 
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
+
 (provide 'setup-web-mode)

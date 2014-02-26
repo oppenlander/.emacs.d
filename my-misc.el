@@ -46,16 +46,16 @@
 (setq column-number-mode t)
 
 ;; Undo/redo window configurations
-(winner-mode 1)
+;; (winner-mode 1)
 
 ;; Represent undo-history as an actual tree (visualize with C-x u)
-(setq undo-tree-mode-lighter "")
-(require 'undo-tree)
-(global-undo-tree-mode)
+;; (setq undo-tree-mode-lighter "")
+;; (require 'undo-tree)
+;; (global-undo-tree-mode)
 
 ;; Browse kill ring
-(require 'browse-kill-ring)
-(browse-kill-ring-default-keybindings)
+;; (require 'browse-kill-ring)
+;; (browse-kill-ring-default-keybindings)
 
 ;; Add parts of each file's directory to the buffer name if not unique
 (require 'uniquify)
@@ -81,7 +81,10 @@
 (projectile-global-mode)
 
 ;; Set global tab width
-(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq-default c-basic-offset 4)
+(setq-default octave-block-offset 4)
 
 ;; Recent files
 (require 'recentf)
@@ -97,5 +100,54 @@
 
 ;; Electric Pair
 (electric-pair-mode 1)
+
+;; Cursor Settings
+(blink-cursor-mode 1)
+(setq default-frame-alist '((cursor-color . "white")))
+
+;; Flymake Keybindings
+(global-set-key [f5] 'flymake-goto-next-error)
+(global-set-key [S-f5] 'flymake-goto-prev-error)
+(global-set-key [f6] 'flymake-display-err-menu-for-current-line)
+
+;; Autocomplete
+(define-key ac-mode-map (kbd "M-TAB") 'Auto-complete)
+
+;; Same-frame Speedbar
+(require 'sr-speedbar)
+(global-set-key (kbd "s-s") 'sr-speedbar-toggle)
+(setq speedbar-show-unknown-files t)
+(setq speedbar-smart-directory-expand-flag t)
+(setq speedbar-use-images nil)
+
+;; Rainbows
+(require 'rainbow-delimiters)
+(global-rainbow-delimiters-mode)
+
+;; Ack
+(require 'ack-and-a-half)
+(defalias 'ack 'ack-and-a-half)
+(defalias 'ack-same 'ack-and-a-half-same)
+(defalias 'ack-find-file 'ack-and-a-half-find-file)
+(defalias 'ack-find-file-same 'ack-and-a-half-find-file-same)
+
+;; Minimap
+(require 'minimap)
+(global-set-key (kbd "s-w") 'minimap-toggle)
+
+;; Move backwards through windows
+(global-set-key "\C-xp" (lambda ()
+                          (interactive)
+                          (other-window -1)))
+
+;; Popwin
+(require 'popwin)
+(popwin-mode 1)
+
+;; Direx
+(require 'direx)
+(push '(direx:direx-mode :position left :width 25 :dedicated t)
+      popwin:special-display-config)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 
 (provide 'my-misc)

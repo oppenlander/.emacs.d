@@ -67,4 +67,7 @@
 ;; Arduino
 (add-to-list 'auto-mode-alist '("\\.pde$" . c-mode))
 
+;; Octabe
+(add-to-list 'auto-mode-alist '("\\.m$" . octave-mode))
+
 (provide 'mode-mappings)

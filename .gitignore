@@ -6,8 +6,11 @@ url/
 eshell/
 ac-comphist*
 session-*
+session.*
 *~
 ido.last
 .places
 projectile-bookmarks.eld
 request/
+tramp
+*conflicted copy*
