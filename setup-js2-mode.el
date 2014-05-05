@@ -6,8 +6,6 @@
 (require 'js2-imenu-extras)
 (js2-imenu-extras-setup)
 
-(add-hook 'js2-mode-hook 'js2-disable-indent-tabs-mode)
-(setq-default intent-tabs-mode nil)
 (setq-default js2-basic-offset 2)
 (setq-default js-indent-level 2)
 
@@ -16,12 +14,16 @@
 (require 'jade-mode)
 
 ;; Tern.JS
-;; (add-to-list 'load-path (expand-file-name "tern/emacs" site-lisp-dir))
-;; (autoload 'tern-mode "tern.el" nil t)
-;; (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
-;; (eval-after-load 'tern
-;;   '(progn
-;;      (require 'tern-auto-complete)
-;;      (tern-ac-setup)))
+(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+(eval-after-load 'tern
+  '(progn
+     (require 'tern-auto-complete)
+     (tern-ac-setup)))
+
+;; Autocomplete js2
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(setq ac-js2-evaluate-calls t)
+;(add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
+
 
 (provide 'setup-js2-mode)

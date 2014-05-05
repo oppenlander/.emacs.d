@@ -58,7 +58,6 @@
    (cons 'ido-at-point melpa)
    (cons 'flx-ido melpa)
    (cons 'fill-column-indicator melpa)
-   (cons 'smooth-scroll melpa)
    (cons 'auto-complete melpa)
    (cons 'web-mode melpa)
    (cons 'nlinum gnu)
@@ -92,9 +91,18 @@
    (cons 'sr-speedbar melpa)
    (cons 'howdoi melpa)
    (cons 'ack-and-a-half melpa)
-   (cons 'minimap melpa)
    (cons 'yasnippet melpa)
    (cons 'popwin melpa)
+   (cons 'floobits melpa)
+   (cons 'geiser melpa)
+   (cons 'tern melpa)
+   (cons 'tern-auto-complete melpa)
+   (cons '2048-game melpa)
+   (cons 'powerline melpa)
+   (cons 'sublimity melpa)
+   (cons 'ag melpa)
+   (cons 'multi-term melpa)
+   (cons 'smart-tabs-mode melpa)
    ))
 (condition-case nil
     (init--install-packages)
@@ -109,7 +117,7 @@
 (eval-after-load 'ido '(require 'setup-ido))
 
 ;; Language specific extensions
-(require 'setup-yasnippet)
+;(require 'setup-yasnippet)
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 (eval-after-load 'python '(require 'setup-python-mode))
@@ -126,6 +134,7 @@
 (eval-after-load 'octave-mode '(require 'setup-octave-mode))
 (eval-after-load 'rust-mode '(require 'setup-rust-mode))
 (eval-after-load 'go-mode '(require 'setup-go-mode))
+;(require 'setup-java-mode)
 
 ;; Map files to modes
 (require 'mode-mappings)

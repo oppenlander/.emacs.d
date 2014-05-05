@@ -1,3 +1,3 @@
-(flymake-lua-load)
+;(flymake-lua-load)
 
 (provide 'setup-lua-mode)

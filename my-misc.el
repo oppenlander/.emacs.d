@@ -81,10 +81,10 @@
 (projectile-global-mode)
 
 ;; Set global tab width
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq-default c-basic-offset 4)
-(setq-default octave-block-offset 4)
+;(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq-default c-basic-offset 2)
+(setq-default octave-block-offset 2)
 
 ;; Recent files
 (require 'recentf)
@@ -111,7 +111,7 @@
 (global-set-key [f6] 'flymake-display-err-menu-for-current-line)
 
 ;; Autocomplete
-(define-key ac-mode-map (kbd "M-TAB") 'Auto-complete)
+(define-key ac-mode-map (kbd "C-TAB") 'auto-complete)
 
 ;; Same-frame Speedbar
 (require 'sr-speedbar)
@@ -131,10 +131,6 @@
 (defalias 'ack-find-file 'ack-and-a-half-find-file)
 (defalias 'ack-find-file-same 'ack-and-a-half-find-file-same)
 
-;; Minimap
-(require 'minimap)
-(global-set-key (kbd "s-w") 'minimap-toggle)
-
 ;; Move backwards through windows
 (global-set-key "\C-xp" (lambda ()
                           (interactive)
@@ -149,5 +145,18 @@
 (push '(direx:direx-mode :position left :width 25 :dedicated t)
       popwin:special-display-config)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
+
+;; Sublimeity smooth scrolling and map
+(require 'sublimity)
+(require 'sublimity-scroll)
+(require 'sublimity-map)
+
+;; Powerline (advanced mode-line)
+(require 'powerline)
+(powerline-default-theme)
+
+;; Multi-term
+(require 'multi-term)
+ (setq multi-term-program "/usr/bin/fish")
 
 (provide 'my-misc)
