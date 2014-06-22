@@ -32,6 +32,15 @@
 (add-to-list 'auto-mode-alist '("\\.json$" . javascript-mode))
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
 
+;; Less
+(autoload 'less-css-mode "less-css-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
+
+;; Handlebars
+(autoload 'handlebars-mode "handlebars-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.hbs$" . handlebars-mode))
+(add-to-list 'auto-mode-alist '("\\.handlebards$" . handlebars-mode))
+
 ;; Snippets
 (add-to-list 'auto-mode-alist '("yasnippet/snippets" . snippet-mode))
 (add-to-list 'auto-mode-alist '("\\.yasnippet$" . snippet-mode))
@@ -40,6 +49,7 @@
 (autoload 'markdown-mode "makrdown-mode")
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("README$" . markdown-mode))
 
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))

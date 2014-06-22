@@ -1,16 +1,23 @@
 ;; Clean up buffer after bullshit
+(defun cleanup-buffer-boring ()
+	(interactive)
+	(delete-trailing-whitespace)
+	(set-buffer-file-coding-system 'utf-8))
 (defun cleanup-buffer-safe ()
   "Perform a safe buffer cleanup"
   (interactive)
   (untabify (point-min) (point-max))
-  (delete-trailing-whitespace)
-  (set-buffer-file-coding-system 'utf-8))
+	(cleanup-buffer-boring))
 (defun cleanup-buffer ()
   "Unsafe buffer cleanup"
   (interactive)
   (cleanup-buffer-safe)
   (indent-region (point-min) (point-max)))
-(add-hook 'before-save-hook 'cleanup-buffer-safe)
+(add-hook 'before-save-hook 'cleanup-buffer-boring)
+
+;; Don't add new line at the end of every file
+(setq mode-require-final-newline nil)
+(setq require-final-newline nil)
 
 ;; Global line numbers
 (global-linum-mode 1)
@@ -46,16 +53,17 @@
 (setq column-number-mode t)
 
 ;; Undo/redo window configurations
-;; (winner-mode 1)
+(winner-mode 1)
 
 ;; Represent undo-history as an actual tree (visualize with C-x u)
-;; (setq undo-tree-mode-lighter "")
-;; (require 'undo-tree)
-;; (global-undo-tree-mode)
+(setq undo-tree-mode-lighter "")
+(require 'undo-tree)
+(global-undo-tree-mode)
 
 ;; Browse kill ring
-;; (require 'browse-kill-ring)
-;; (browse-kill-ring-default-keybindings)
+;; errors and won't quit
+;(require 'browse-kill-ring)
+;(browse-kill-ring-default-keybindings)
 
 ;; Add parts of each file's directory to the buffer name if not unique
 (require 'uniquify)
@@ -98,9 +106,6 @@
 ;; Show matchin parentheses
 (show-paren-mode 1)
 
-;; Electric Pair
-(electric-pair-mode 1)
-
 ;; Cursor Settings
 (blink-cursor-mode 1)
 (setq default-frame-alist '((cursor-color . "white")))
@@ -121,8 +126,8 @@
 (setq speedbar-use-images nil)
 
 ;; Rainbows
-(require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode)
+;(require 'rainbow-delimiters)
+;(global-rainbow-delimiters-mode)
 
 ;; Ack
 (require 'ack-and-a-half)
@@ -146,17 +151,46 @@
       popwin:special-display-config)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 
-;; Sublimeity smooth scrolling and map
-(require 'sublimity)
-(require 'sublimity-scroll)
-(require 'sublimity-map)
-
 ;; Powerline (advanced mode-line)
 (require 'powerline)
 (powerline-default-theme)
 
 ;; Multi-term
 (require 'multi-term)
- (setq multi-term-program "/usr/bin/fish")
+(setq multi-term-program "/usr/bin/fish")
+
+;; Make tramp work nicely with sudo
+(set-default 'tramp-default-proxies-alist (quote ((".*" "\\`root\\'" "/ssh:%h:"))))
+
+;; Smartparens
+(require 'smartparens-config)
+(smartparens-global-mode 1)
+(show-smartparens-global-mode 1)
+(global-set-key (kbd "C-M-k") 'sp-kill-sexp)
+
+;; Diminish modeline
+(require 'diminish)
+(diminish 'smartparens-mode)
+
+;; Cleaning modeline
+(defmacro rename-modeline (package-name mode new-name)
+	`(eval-after-load ,package-name
+		 '(defadvice ,mode (after rename-modeline activate)
+				(setq mode-name ,new-name))))
+
+;; eww it up
+(require 'eww)
+(require 'w3m)
+(setq browse-url-browser-function 'w3m-browse-url)
+
+;; my magit
+(require 'magit)
+(global-set-key (kbd "C-c g") 'magit-status)
+
+;; multiple cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (provide 'my-misc)
