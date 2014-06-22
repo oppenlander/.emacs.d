@@ -11,6 +11,6 @@
 (defvar popwin:special-display-config-backup popwin:special-display-config)
 (setq display-buffer-function 'popwin:display-buffer)
 (push '("^\*go-direx:" :regexp t :position left :width 0.4 :dedicated t :stick t)
-      popwin:special-display-config)
+			popwin:special-display-config)
 
 (provide 'setup-go-mode)

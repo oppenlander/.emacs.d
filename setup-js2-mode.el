@@ -27,16 +27,16 @@
 (require 'tern)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
 (eval-after-load 'tern
-  '(progn
-     (require 'tern-auto-complete)
-     (tern-ac-setup)))
+	'(progn
+		 (require 'tern-auto-complete)
+		 (tern-ac-setup)))
 (setq-default tern-ac-on-dot t)
 
 ;; Autocomplete js2
-;(require 'auto-complete)
-;(add-hook 'js2-mode-hook 'ac-js2-mode)
-;(setq ac-js2-evaluate-calls t)
-;(add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
+; (require 'auto-complete)
+; (add-hook 'js2-mode-hook 'ac-js2-mode)
+; (setq ac-js2-evaluate-calls t)
+; (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
 
 ;; Grunt
 (require 'grunt)

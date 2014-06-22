@@ -4,15 +4,15 @@
 	(delete-trailing-whitespace)
 	(set-buffer-file-coding-system 'utf-8))
 (defun cleanup-buffer-safe ()
-  "Perform a safe buffer cleanup"
-  (interactive)
-  (untabify (point-min) (point-max))
+	"Perform a safe buffer cleanup"
+	(interactive)
+	(untabify (point-min) (point-max))
 	(cleanup-buffer-boring))
 (defun cleanup-buffer ()
-  "Unsafe buffer cleanup"
-  (interactive)
-  (cleanup-buffer-safe)
-  (indent-region (point-min) (point-max)))
+	"Unsafe buffer cleanup"
+	(interactive)
+	(cleanup-buffer-safe)
+	(indent-region (point-min) (point-max)))
 (add-hook 'before-save-hook 'cleanup-buffer-boring)
 
 ;; Don't add new line at the end of every file
@@ -62,8 +62,8 @@
 
 ;; Browse kill ring
 ;; errors and won't quit
-;(require 'browse-kill-ring)
-;(browse-kill-ring-default-keybindings)
+																				;(require 'browse-kill-ring)
+																				;(browse-kill-ring-default-keybindings)
 
 ;; Add parts of each file's directory to the buffer name if not unique
 (require 'uniquify)
@@ -72,24 +72,24 @@
 ;; Auto-complete
 (require 'auto-complete)
 (define-globalized-minor-mode real-global-auto-complete-mode
-  auto-complete-mode (lambda ()
-                       (if (not (minibufferp (current-buffer)))
-                           (auto-complete-mode 1))
-                       ))
+	auto-complete-mode (lambda ()
+											 (if (not (minibufferp (current-buffer)))
+													 (auto-complete-mode 1))
+											 ))
 (real-global-auto-complete-mode t)
 
 ;; Hide DOS line endings
 (defun remove-dos-eol ()
-  (interactive)
-  (setq buffer-display-table (make-display-table))
-  (aset buffer-display-table ?\^M []))
+	(interactive)
+	(setq buffer-display-table (make-display-table))
+	(aset buffer-display-table ?\^M []))
 
 ;; Projectile
 (require 'projectile)
 (projectile-global-mode)
 
 ;; Set global tab width
-;(setq-default indent-tabs-mode nil)
+																				;(setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq-default c-basic-offset 2)
 (setq-default octave-block-offset 2)
@@ -126,8 +126,8 @@
 (setq speedbar-use-images nil)
 
 ;; Rainbows
-;(require 'rainbow-delimiters)
-;(global-rainbow-delimiters-mode)
+																				;(require 'rainbow-delimiters)
+																				;(global-rainbow-delimiters-mode)
 
 ;; Ack
 (require 'ack-and-a-half)
@@ -138,8 +138,8 @@
 
 ;; Move backwards through windows
 (global-set-key "\C-xp" (lambda ()
-                          (interactive)
-                          (other-window -1)))
+													(interactive)
+													(other-window -1)))
 
 ;; Popwin
 (require 'popwin)
@@ -148,7 +148,7 @@
 ;; Direx
 (require 'direx)
 (push '(direx:direx-mode :position left :width 25 :dedicated t)
-      popwin:special-display-config)
+			popwin:special-display-config)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 
 ;; Powerline (advanced mode-line)
