@@ -126,6 +126,9 @@
 	 (cons 'helm-themes melpa)
 	 (cons 'w3 gnu)
 	 (cons 'w3m melpa)
+	 (cons 'guide-key melpa)
+	 (cons 'visual-regexp melpa)
+	 (cons 'visual-regexp-steroids melpa)
 	 ))
 (condition-case nil
 		(init--install-packages)

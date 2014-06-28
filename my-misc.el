@@ -193,4 +193,18 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; guide key
+(require 'guide-key)
+(setq guide-key/guide-key-sequence '("C-x" "C-c"))
+(setq guide-key/recursive-key-sequence-flag t)
+(guide-key-mode 1)
+
+;; visual regexp (with steroids!)
+(require 'visual-regexp-steroids)
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
+(define-key esc-map (kbd "C-r") 'vr/isearch-backward)
+(define-key esc-map (kbd "C-s") 'vr/isearch-forward)
+
 (provide 'my-misc)
