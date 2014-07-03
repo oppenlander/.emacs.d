@@ -129,6 +129,7 @@
 	 (cons 'guide-key melpa)
 	 (cons 'visual-regexp melpa)
 	 (cons 'visual-regexp-steroids melpa)
+	 (cons 'js-comint melpa)
 	 ))
 (condition-case nil
 		(init--install-packages)
