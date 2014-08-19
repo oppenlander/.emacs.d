@@ -4,7 +4,7 @@
 (require 'cider)
 
 (defadvice clojure-test-run-tests (before save-first activate)
-	(save-buffer))
+  (save-buffer))
 
 ;; Enable eldoc
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)

@@ -69,6 +69,10 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
+
+;; Diminish modeline
+(require 'diminish)
+
 ;; Auto-complete
 (require 'auto-complete)
 (define-globalized-minor-mode real-global-auto-complete-mode
@@ -77,6 +81,7 @@
 													 (auto-complete-mode 1))
 											 ))
 (real-global-auto-complete-mode t)
+(diminish 'auto-complete-mode)
 
 ;; Hide DOS line endings
 (defun remove-dos-eol ()
@@ -89,7 +94,7 @@
 (projectile-global-mode)
 
 ;; Set global tab width
-																				;(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq-default c-basic-offset 2)
 (setq-default octave-block-offset 2)
@@ -109,11 +114,6 @@
 ;; Cursor Settings
 (blink-cursor-mode 1)
 (setq default-frame-alist '((cursor-color . "white")))
-
-;; Flymake Keybindings
-(global-set-key [f5] 'flymake-goto-next-error)
-(global-set-key [S-f5] 'flymake-goto-prev-error)
-(global-set-key [f6] 'flymake-display-err-menu-for-current-line)
 
 ;; Autocomplete
 (define-key ac-mode-map (kbd "C-TAB") 'auto-complete)
@@ -167,9 +167,6 @@
 (smartparens-global-mode 1)
 (show-smartparens-global-mode 1)
 (global-set-key (kbd "C-M-k") 'sp-kill-sexp)
-
-;; Diminish modeline
-(require 'diminish)
 (diminish 'smartparens-mode)
 
 ;; Cleaning modeline
@@ -198,6 +195,7 @@
 (setq guide-key/guide-key-sequence '("C-x" "C-c"))
 (setq guide-key/recursive-key-sequence-flag t)
 (guide-key-mode 1)
+(diminish 'guide-key-mode)
 
 ;; visual regexp (with steroids!)
 (require 'visual-regexp-steroids)
@@ -206,5 +204,39 @@
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 (define-key esc-map (kbd "C-r") 'vr/isearch-backward)
 (define-key esc-map (kbd "C-s") 'vr/isearch-forward)
+
+;; Flycheck
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(diminish 'flycheck-mode)
+
+;; Evil!
+(require 'evil)
+(global-set-key [f5] 'evil-mode)
+
+;; New Scratch Buffer
+(defun new-empty-buffer ()
+  (interactive)
+  (let ((n 0)
+        new-buf)
+    (while (progn
+             (setq new-buf (concat "-untitled-"
+                                       (if (= n 0) "0" (int-to-string n))
+                                       "-"))
+             (incf n)
+             (get-buffer new-buf)))
+    (switch-to-buffer (get-buffer-create new-buf))
+    (text-mode)))
+(define-key global-map (kbd "C-c C-n") 'new-empty-buffer)
+
+;; ACE!
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; Reverse join
+(global-set-key (kbd "M-j") (lambda () (interactive) (join-line -1)))
+
+;; Pass(word-store)
+(require 'password-store)
 
 (provide 'my-misc)

@@ -20,8 +20,8 @@
 
 ;; Less
 (require 'less-css-mode)
-(require 'flymake-less)
-(add-hook 'less-css-mode-hook 'flymake-less-load)
+;;(require 'flymake-less)
+;;(add-hook 'less-css-mode-hook 'flymake-less-load)
 
 ;; Tern.JS
 (require 'tern)
@@ -50,8 +50,8 @@
 (rename-modeline "js2-mode" js2-mode "JS2")
 
 ;; Flymake
-(require 'flymake)
-(add-hook 'js2-mode-hook 'flymake-mode)
+;;(require 'flymake)
+;;(add-hook 'js2-mode-hook 'flymake-mode)
 
 (require 'js-comint)
 (setq inferior-js-program-command "node")
@@ -73,4 +73,16 @@
 		(local-set-key "\C-c\C-n" 'js-send-region-and-go)
 		(local-set-key "\C-cl" 'js-load-file-and-go)))
 
+(require 'json-mode)
+
+;; Use lambda for anonymous functions
+;; (font-lock-add-keywords
+;;  'js2-mode `(("\\(function\\) *("
+;; 							(0 (progn (compose-region (match-beginning 1)
+;; 																				(match-end 1) "\u03BB")
+;; 												nil)))))
+
+(add-hook 'js2-mode-hook '(lambda () (setq indent-tabs-mode 1)))
+
 (provide 'setup-js2-mode)
+;;; setup-js2-mode ends here

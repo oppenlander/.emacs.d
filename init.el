@@ -1,6 +1,9 @@
 ;; Turn off tool-bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
+;; Turn off menu-bar
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
 ;; No splash screen
 (setq inhibit-startup-message t)
 
@@ -13,7 +16,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Monospace" :foundry "unknown" :slant normal :weight normal :height 90 :width normal)))))
+ '(default ((t (:family "Monospace" :foundry "unknown" :slant normal :weight normal :height 90 :width normal))))
+ '(jabber-activity-personal-face ((t (:foreground "deep sky blue" :weight bold))))
+ '(jabber-chat-prompt-local ((t (:foreground "deep sky blue" :weight bold))))
+ '(jabber-roster-user-online ((t (:foreground "deep sky blue" :slant normal :weight bold)))))
 
 ;; Set path to dependencies
 (setq site-lisp-dir
@@ -130,6 +136,12 @@
 	 (cons 'visual-regexp melpa)
 	 (cons 'visual-regexp-steroids melpa)
 	 (cons 'js-comint melpa)
+	 (cons 'flycheck melpa)
+	 (cons 'json-mode melpa)
+	 (cons 'ace-jump-mode melpa)
+	 (cons 'csv-mode marmalade)
+	 (cons 'password-store melpa)
+	 (cons 'fish-mode melpa)
 	 ))
 (condition-case nil
 		(init--install-packages)
@@ -143,8 +155,10 @@
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
 
+;; Snippets
+(eval-after-load 'yasnippet '(require 'setup-yasnippet))
+
 ;; Language specific extensions
-																				;(require 'setup-yasnippet)
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 (eval-after-load 'python '(require 'setup-python-mode))
@@ -164,6 +178,7 @@
 																				;(require 'setup-java-mode)
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 (require 'setup-helm-mode)
+(require 'fish-mode)
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -184,6 +199,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(jabber-account-list (quote (("115566_887076@chat.hipchat.com" (:password . "fakepass") (:network-server . "chat.hipchat.com") (:port . 5222) (:connection-type . starttls)))))
  '(js-indent-level 2)
  '(pandoc-major-modes (quote ((haskell-mode . "native") (text-mode . "markdown") (markdown-mode . "markdown_github") (mediawiki-mode . "mediawiki") (textile-mode . "textile") (rst-mode . "rst") (html-mode . "html") (latex-mode . "latex") (json-mode . "json")))))
 (put 'downcase-region 'disabled nil)
