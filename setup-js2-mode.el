@@ -2,6 +2,11 @@
 (setq-default js2-bounce-indent-p t)
 (setq-default js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum"))
 
+;; Let Flycheck handle errors until js2 mode supports ES6
+(setq-default js2-show-parse-errors nil)
+(setq-default js2-strict-missing-semi-warning nil)
+(setq-default js2-strict-trailing-comma-warning t)
+
 (require 'js2-imenu-extras)
 (js2-imenu-extras-setup)
 
@@ -20,23 +25,22 @@
 
 ;; Less
 (require 'less-css-mode)
-;;(require 'flymake-less)
-;;(add-hook 'less-css-mode-hook 'flymake-less-load)
+(add-hook 'less-css-mode-hook '(lambda () (setq indent-tabs-mode 1)))
 
 ;; Tern.JS
-(require 'tern)
-(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
-(eval-after-load 'tern
-	'(progn
-		 (require 'tern-auto-complete)
-		 (tern-ac-setup)))
-(setq-default tern-ac-on-dot t)
+;; (require 'tern)
+;; (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+;; (eval-after-load 'tern
+;; 	'(progn
+;; 		 (require 'tern-auto-complete)
+;; 		 (tern-ac-setup)))
+;; (setq-default tern-ac-on-dot t)
 
 ;; Autocomplete js2
-; (require 'auto-complete)
-; (add-hook 'js2-mode-hook 'ac-js2-mode)
-; (setq ac-js2-evaluate-calls t)
-; (add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
+(require 'auto-complete)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(setq-default ac-js2-evaluate-calls t)
+;(add-to-list 'ac-js2-external-libraries "path/to/lib/library.js")
 
 ;; Grunt
 (require 'grunt)
